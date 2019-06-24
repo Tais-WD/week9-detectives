@@ -4,23 +4,19 @@
 <div class="page page-home">
     
     <img src="img/crime-logo.png" alt="" class="logo">
-    <h1>World class<br><small>Detective hiring</small></h1>
+    <h1>World class<br><small>The detectives list</small></h1>
 
     <div class="desc">
-        Has a crime been commited? Did you find a rich heiress face down in the mansion's swimming pool? Hire a famous detective and the culprit is as good as already behind bars.
+            <h1>The detectives list</h1>
     </div>
-<ul>
+    <ul>
             @foreach($detectives as $detective)
                 <li>{{ $detective->name }}</li>
             @endforeach
    </ul>
-
     <a href="#" class="report">Hire a detective</a>
 
-    
     <div class="detectives">
-           
-
         <a href="#">
             <img src="img/holmes.jpg" alt="">
         </a>

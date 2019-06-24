@@ -10,9 +10,14 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('detectives/index', 'DetectiveController@index');
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
-
+Route::get('/home', function () {
+    return view('index');
+});
 Auth::routes();
+Route::get('detective/{detective_slug}', 'DetectiveController@show');
+
+// Route::resource('/detectives','DetectiveController');

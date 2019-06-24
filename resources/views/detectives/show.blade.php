@@ -1,5 +1,4 @@
-@extends('common/layout')
-
+@extends('layouts/layout')
 @section('content')
 <div class="page page-detective">
 
