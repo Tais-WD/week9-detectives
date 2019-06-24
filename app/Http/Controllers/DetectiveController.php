@@ -26,7 +26,7 @@ class DetectiveController extends Controller
         return $view;
     }
     public function store(Request $request){
-        $crime = new Crime();
+        $crime = new \App\Crime();
 
         $crime->subject = $request->subject;
         $crime->description = $crime->description;
