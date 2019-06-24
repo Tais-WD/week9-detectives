@@ -28,9 +28,9 @@
 
         <form action="" method="post">
 
-            <input type="text" name="subject" placeholder="What crime has been commited?">
+            <input type="text" name="subject" placeholder="What crime has been commited?"value="{{ $crime->subject }}>
 
-            <textarea name="description" placeholder="Thorough description"></textarea>
+            <textarea name="description" placeholder="Thorough description"value="{{ $crime->description }}></textarea>
 
             <input type="submit" value="Hire">
         </form>
